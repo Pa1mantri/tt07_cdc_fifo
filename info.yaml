@@ -15,33 +15,40 @@ project:
   
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:        
-    - "project.v"
+    - "tt_um_pa1mantri_cdc_fifo.sv"
+    - "cdc_fifo.sv"
+    - "dpram.sv"
+    - "binary_to_gray.sv"
+    - "gray_to_binary.sv"
+    - "synchronizer.sv"
+    - "cdc_fifo_read_state.sv"
+    - "cdc_fifo_write_state.sv"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[0]: "write_clock"
+  ui[1]: "write_increment"
+  ui[2]: "read_clock"
+  ui[3]: "read_increment"
+  ui[4]: "write_data0"
+  ui[5]: "write_data1"
+  ui[6]: "write_data2"
+  ui[7]: "write_data3"
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
+  uo[0]: "empty"
+  uo[1]: "full"
   uo[2]: ""
   uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[4]: "read_data0"
+  uo[5]: "read_data1"
+  uo[6]: "read_data2"
+  uo[7]: "read_data3"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
+  uio[0]: "write_reset"
+  uio[1]: "read_reset"
   uio[2]: ""
   uio[3]: ""
   uio[4]: ""
