@@ -1,5 +1,5 @@
 # Tiny Tapeout project information
-project:	"Asynchronous clock domain crossing FIFO"
+project:        "Asynchronous clock domain crossing FIFO"
   title:        "Clock Domain Crossing FIFO"      # Project title
   author:       "Pavan Mantri"      # Your name
   discord:      "pa1man3"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
