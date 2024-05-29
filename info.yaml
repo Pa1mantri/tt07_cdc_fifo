@@ -1,5 +1,5 @@
 # Tiny Tapeout project information
-project:	"Asynchronous clock domain crossing FIFO"
+  project:	"Asynchronous clock domain crossing FIFO"
   title:        "Clock Domain Crossing FIFO"      # Project title
   author:       "Pavan Mantri"      # Your name
   discord:      "pa1man3"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
@@ -11,7 +11,7 @@ project:	"Asynchronous clock domain crossing FIFO"
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_example"
+  top_module:  "tt_um_pa1mantri_cdc_fifo"
   
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:        
