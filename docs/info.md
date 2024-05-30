@@ -9,12 +9,16 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This is a FIFO that can pass data asynchronously across clock domains.
 
 ## How to test
 
-Explain how to use your project
+Hold write_reset and read_reset LOW while running the clock for a bit to reset, then raise to initialize the module.
+
+writing to the fifo: Prepare your data on the 4-bit write_data bus, ensure the full state is low and then raise write_increment for 1 cycle of write_clock to write data into the FIFO memory.
+
+Reading from the fifo: The FIFO will present the current output on the read_data bus. If empty is low, this output should be valid and you can acknowledge receive of this vallue by raising read_increment for 1 cycle of read_clock.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+NO external hardware is used.
