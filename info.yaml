@@ -1,10 +1,10 @@
 # Tiny Tapeout project information
-project:        "Asynchronous clock domain crossing FIFO"
+project:
   title:        "Clock Domain Crossing FIFO"      # Project title
   author:       "Pavan Mantri"      # Your name
   discord:      "pa1man3"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "This FIFO buffers 4-bits data asynchronously across clock domains"      # One line description of what your project does
-  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  language:     "System Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
@@ -23,6 +23,8 @@ project:        "Asynchronous clock domain crossing FIFO"
     - "synchronizer.sv"
     - "cdc_fifo_read_state.sv"
     - "cdc_fifo_write_state.sv"
+    
+    
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
@@ -42,7 +44,7 @@ pinout:
   uo[2]: ""
   uo[3]: ""
   uo[4]: "read_data0"
-  uo[5]: "read_data1"
+  uo[5]: "read-data1"
   uo[6]: "read_data2"
   uo[7]: "read_data3"
 
