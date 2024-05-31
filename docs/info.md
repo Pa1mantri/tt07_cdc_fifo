@@ -9,7 +9,8 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-This is a FIFO that can pass data asynchronously across clock domains.
+The cdc_fifo module transfers data between two clock domains: a write clock domain and a read clock domain. The module includes a dual-ported RAM(dpram) for storing data, along with logic for handling read and write operations(cdc_fifo_read_state and cdc_fifo-write-state). synchronizers(synchronizer) and binary/gray converters(binary_to_gray and gray_to_binary) ensure proper synchronization between two clock domains.
+
 
 ## How to test
 
@@ -22,3 +23,5 @@ Reading from the fifo: The FIFO will present the current output on the read_data
 ## External hardware
 
 NO external hardware is used.
+
+
